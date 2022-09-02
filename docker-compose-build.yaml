@@ -2,17 +2,17 @@ version: "3"
 services:
   reverseproxy:
     build:
-      context: ./udagram-reverseproxy
-    image: reverseproxy
+      context: ../../Nouveau dossier (6)/microservices-project/reverseproxy
+    image: raykadri/reverseproxy 
   backend_user:
     build:
-      context: ./udagram-api-user
-    image: udagram-api-user
+      context: ../../Nouveau dossier (6)/microservices-project/udagram-api-user
+    image: raykadri/udagram-api-user
   backend_feed:
     build:
-      context: ./udagram-api-feed
-    image: udagram-api-feed
+      context: ../../Nouveau dossier (6)/microservices-project/udagram-api-feed  
+    image: vikrambedi/rest-api-feed
   frontend:
     build:
-      context: ./udagram-frontend
-    image: udagram-frontend:local
+      context: ../../Nouveau dossier (6)/microservices-project/udagram-frontend  
+    image: raykadri/udagram-frontend
